@@ -52,7 +52,7 @@ img, svg {
 .main-button {
   display: inline-block;
   min-width: 184px;
-  padding: 15px 47px;
+  padding: 15px 24px;
   color: var(--webdev-white);
   font-size: 14px;
   font-weight: 500;
@@ -61,7 +61,11 @@ img, svg {
   text-decoration: none;
   text-transform: uppercase;
   background-color: var(--webdev-blue);
+  border: none;
+  border-radius: 0;
+  fill: var(--webdev-white);
   transition: background-color var(--transition-duration) linear;
+  cursor: pointer;
 }
 
 .main-button:hover {
@@ -456,4 +460,65 @@ img, svg {
 
 .implement__button {
   min-width: 180px;
+}
+
+/* subscribe */
+
+.subscribe {
+  padding: 217px 0 277px;
+  color: var(--webdev-white);
+  background-color: var(--webdev-blue-hover);
+  background-image: url("assets/img/subscribe-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subscribe__form {
+  max-width: 406px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subscribe__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.subscribe__input-group {
+  display: flex;
+}
+
+.subscribe__input {
+  flex: 1 1 auto;
+  padding: 14px 24px 12px;
+  color: var(--webdev-dark);
+  font-size: 14px;
+  line-height: 1.4;
+  background-color: var(--webdev-white);
+  border: none;
+  border-radius: 0;
+}
+
+.subscribe__input:focus {
+  outline: none;
+}
+
+.subscribe__input::placeholder {
+  color: var(--webdev-dark);
+}
+
+.subscribe__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: auto;
+  width: 66px;
+  height: 46px;
+  padding: 0;
 }
