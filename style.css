@@ -270,10 +270,11 @@ img, svg {
   text-align: center;
 }
 
-.hero-section__title {
+.hero-section__motto {
   margin: 0;
   margin-bottom: 20px;
   font-size: 64px;
+  font-weight: 700;
   line-height: 75px;
   letter-spacing: 4.5px;
   text-transform: uppercase;
