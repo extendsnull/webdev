@@ -78,6 +78,7 @@ img, svg {
 /* main-button */
 
 .main-button {
+  position: relative;
   display: inline-block;
   min-width: 184px;
   padding: 15px 24px;
@@ -94,6 +95,26 @@ img, svg {
   fill: var(--webdev-white);
   transition: background-color var(--transition-duration) linear;
   cursor: pointer;
+}
+
+.main-button--has-icon {
+  display: inline-flex;
+  align-items: center;
+  min-width: 188px;
+  padding: 17px 19px;
+  padding-right: 78px;
+}
+
+.main-button__icon-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 100%;
+  background-color: var(--webdev-blue-hover);
 }
 
 .main-button:hover {
@@ -530,4 +551,25 @@ img, svg {
   width: 66px;
   height: 46px;
   padding: 0;
+}
+
+/* download */
+
+.download__content {
+  max-width: 482px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.download__buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.download__button {
+  margin-right: 30px;
+}
+
+.download__button:last-child {
+  margin-right: 0;
 }
