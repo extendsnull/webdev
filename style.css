@@ -248,8 +248,7 @@ img, svg {
 
 .hero-section {
   display: flex;
-  /* add min-height: 100vh */
-  min-height: 744px;
+  min-height: 100vh;
   padding: 95px 0 89px;
   color: var(--webdev-white);
   background-color: var(--webdev-black);
